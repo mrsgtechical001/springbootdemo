@@ -67,4 +67,13 @@ public class StudentImpl implements StudentDao{
         StudentEntity student = manager.find(StudentEntity.class,id);
         manager.remove(student);
     }
+
+    @Override
+    @Transactional
+    public int deleteAll() {
+
+        int numRowDeleted = manager.createQuery("DELETE FROM StudentEntity").executeUpdate();
+        return numRowDeleted;
+    }
+
 }

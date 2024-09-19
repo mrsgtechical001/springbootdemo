@@ -36,9 +36,17 @@ public class SpringDemoApplication /*implements CommandLineRunner*/ {
 
 //                updateStudent(student);
 
-            deleteStudent(student);
+//            deleteStudent(student);
 
+            deleteAll(student);
         };
+    }
+
+    private void deleteAll(StudentDao student) {
+
+       int deleteRowCount = student.deleteAll();
+
+        System.out.println("delete successfully : "+deleteRowCount);
     }
 
     private void deleteStudent(StudentDao student) {
