@@ -45,7 +45,7 @@ public class SpringDemoApplication /*implements CommandLineRunner*/ {
 
 
     }
-//https://github.com/mrsgtechical001/springDemo.git
+//
     private void updateStudent(StudentDao student) {
 
         int studentId =1;
