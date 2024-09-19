@@ -85,7 +85,7 @@ public class SpringDemoApplication /*implements CommandLineRunner*/ {
 
     private void readDataFromDB(StudentDao student) {
 
-        StudentEntity entity1 =new StudentEntity("Sagar", "Developer","developer@android.com");
+        StudentEntity entity1 = new StudentEntity("Sagar", "Developer","developer@android.com");
         int id = entity1.getId();
 
         System.out.println("search Student found :_"+ student.findById(id));
