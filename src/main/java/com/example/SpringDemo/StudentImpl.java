@@ -60,7 +60,7 @@ public class StudentImpl implements StudentDao{
 
     @Override
     public void deleteStudent(Integer id) {
-
+        //This comment is added
         StudentEntity student = manager.find(StudentEntity.class,id);
         manager.remove(student);
     }
